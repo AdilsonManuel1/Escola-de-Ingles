@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+
+    padding-inline: 30px;
+    padding-block: 5px;
+}
+
+nav img {
+    width: 100%;
+}
+
+nav .menu {
+    width: 160px;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 66px);
+    background: linear-gradient(0deg, rgba(227, 110, 120, 1) 0%, rgba(255, 255, 255, 1) 31%);
+    padding-inline: 50px;
+    padding-block: 10px 40px;
+
+}
+
+.main-section .main-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font: normal normal bold 18px "Neo Sans Pro";
+    width: 50%;
+}
+
+.main-section .main-section-text h1 {
+    color: #b70000;
+    font-size: 2rem;
+    font-family: 'Neo Sans Pro Ultra';
+
+}
+
+.main-section .main-section-text h3 {
+    color: #610000;
+    margin-block: 20px 20px;
+    font-size: 1.5rem;
+    font-family: 'Neo Sans Std Bold';
+    color: #610000;
+}
+
+
+/* Botao */
+
+
+.main-section .main-section-text a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 80px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 2;
+    font: normal normal bold 22px "Neo Sans Pro";
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: linear-gradient(90deg, rgb(243, 4, 4) 0%, rgb(240, 5, 5) 100%);
+    border: none;
+    box-shadow: 12px 12px 24px rgba(11, 11, 11, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    outline: none;
+    position: relative;
+}
+
+.main-section .main-section-text a::before {
+    content: '';
+    border-radius: 50px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    box-shadow: 0 0 60px rgba(4, 4, 4, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.main-section .main-section-text a:hover,
+.main-section .main-section-text:focus {
+    color: white;
+    transform: translateY(-6px);
+}
+
+.main-section .main-section-text a:hover::before,
+.main-section .main-section-texta:focus::before {
+    opacity: 1;
+}
+
+.main-section .main-section-text a::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #0d0d0d;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.main-section .main-section-text a:hover::after,
+.main-section .main-section-text a:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+/* End Botao */
+.vantagem-text a {
+    text-decoration: none;
+    margin-top: 50px;
+    background-color: white;
+    color: red;
+    padding: 20px 18px;
+    text-align: center;
+    border-radius: 50px;
+    font: normal normal bold 18px "Neo Sans Pro Ultra";
+}
+
+.vantagem-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-block: 20px;
+}
+
+.iconvantagens {
+    margin-inline: 0;
+    width: 40%;
+}
+
+.vantagem-text a {
+    text-decoration: none;
+    margin-top: 50px;
+    background-color: white;
+    color: red;
+    padding: 20px 31px !important;
+    text-align: center;
+    border-radius: 50px;
+    font: normal normal bold 18px "Neo Sans Pro Ultra";
+}

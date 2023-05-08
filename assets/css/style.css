@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    background-color: red;
+    padding-inline: 50px;
+    padding-block: 5px;
+}
+
+nav img {
+    width: 100%;
+}
+
+nav .menu {
+    width: 160px;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 66px);
+    background: linear-gradient(0deg, rgba(227, 110, 120, 1) 0%, rgba(255, 255, 255, 1) 31%);
+    padding-inline: 50px;
+    padding-block: 10px 40px;
+
+}
+
+.main-section .main-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font: normal normal bold 18px "Neo Sans Pro";
+    width: 50%;
+}
+
+.main-section .main-section-text h1 {
+    color: #b70000;
+    font-size: 3.2rem;
+    font-family: 'Neo Sans Pro Ultra';
+
+}
+
+.main-section .main-section-text h3 {
+    color: #610000;
+    margin-block: 20px 20px;
+    font-size: 2.5rem;
+    font-family: 'Neo Sans Std Bold';
+    color: #610000;
+    margin-bottom: 100px;
+}
+
+
+/* Botao */
+
+
+.main-section .main-section-text a {
+    text-decoration: none;
+    color: white;
+
+    padding: 30px 80px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 2;
+    font: normal normal bold 22px "Neo Sans Pro Ultra";
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: linear-gradient(90deg, rgb(243, 4, 4) 0%, rgb(240, 5, 5) 100%);
+    border: none;
+    box-shadow: 12px 12px 24px rgba(11, 11, 11, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    outline: none;
+    position: relative;
+}
+
+.main-section .main-section-text a::before {
+    content: '';
+    border-radius: 50px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    box-shadow: 0 0 60px rgba(4, 4, 4, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.main-section .main-section-text a:hover,
+.main-section .main-section-text:focus {
+    color: white;
+    transform: translateY(-6px);
+}
+
+.main-section .main-section-text a:hover::before,
+.main-section .main-section-texta:focus::before {
+    opacity: 1;
+}
+
+.main-section .main-section-text a::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #0d0d0d;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.main-section .main-section-text a:hover::after,
+.main-section .main-section-text a:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+/* End Botao */
+.main-section-image {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.main-section-image img {
+    width: 80%;
+}
+
+/* Secção Aprender */
+
+.aprender {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding-block: 10px 40px;
+}
+
+.aprender .image-tela {
+    width: 45%;
+    padding-inline: 50px;
+}
+
+.aprender .image-balao {
+    width: 40%;
+    text-align: center;
+}
+
+.image-balao img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/*
+.image-balao a {
+
+    text-decoration: none;
+    background-color: white;
+    color: red;
+    padding: 30px 80px;
+    text-align: center;
+    border-radius: 50px;
+    font: normal normal bold 22px "Neo Sans Pro Ultra";
+}
+*/
+
+/* Secção Metodologia */
+.metodologia {
+    padding-inline: 50px;
+}
+
+.metodologia h3 {
+    color: #610000;
+    text-align: center;
+    font: normal normal bold 50px "Neo Sans Pro Ultra";
+    padding-block: 40px;
+}
+
+.lista-metodologia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lista-metodologia .icon-metodologia {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+    font: normal italic bold 26px "Neo Sans Pro Ultra";
+}
+
+.icon-metodologia img {
+    width: 40%;
+}
+
+/* Secção Vantagem */
+.vantagem {
+    background-color: red;
+    padding-inline: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.image-vantagem {
+    align-items: flex-end;
+    display: flex;
+}
+
+.image-vantagem img {
+    width: 53%;
+
+}
+
+.vantagem-text {
+    width: 62%;
+
+
+}
+
+.vantagem-text h2 {
+    color: white;
+    font: normal italic bold 24px "Neo Sans Pro Ultra";
+    text-align: center;
+    padding: 20px;
+}
+
+.botao-vantagem {
+    width: 100%;
+    text-align: center;
+    margin-block: 50px 30px;
+
+}
+
+/*
+.vantagem-text a {
+    text-decoration: none;
+    margin-top: 50px;
+    background-color: white;
+    color: red;
+    /* padding: 20px 95px; 
+    padding: 30px 80px;
+    text-align: center;
+    border-radius: 50px;
+    font: normal normal bold 22px "Neo Sans Pro Ultra";
+} */
+
+.vantagem-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-block: 20px;
+
+}
+
+.iconvantagens {
+    margin-inline: 12px;
+    width: 28%;
+
+
+}
+
+/* Accordion */
+.perguntas {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.perguntas h2 {
+    color: red;
+    font: normal normal bold 35px "Neo Sans Pro Ultra";
+    padding-inline: 10px;
+    text-align: center;
+    margin-block: 20px;
+
+}
+
+
+
+.perguntas .accordion:hover {}
+
+.accordion {
+    background-color: red;
+    color: white;
+    margin-bottom: 0.2;
+    border: #fff 1px solid;
+}
+
+.perguntas {
+    margin-bottom: 1%;
+    padding-top: 0.5%;
+}
+
+.p-3 {
+    width: 100%;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+    color: black;
+    font-weight: bold;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.accordion-bral {
+    min-height: 0;
+    min-width: 220px;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    margin: 0px !important;
+}
+
+.accordion-bral .ac-label {
+    font-family: Arial, sans-serif;
+    padding: 5px 20px;
+    position: relative;
+    display: block;
+    height: auto;
+    cursor: pointer;
+    color: #777;
+    line-height: 33px;
+    font-size: 19px;
+    background: #EFEFEF;
+    border: 1px solid #CCC;
+}
+
+.accordion-bral .ac-label:hover {
+    background: #BBB;
+}
+
+.accordion-bral input+.ac-label {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-bral input:checked+.ac-label,
+.accordion-bral input:checked+.ac-label:active {
+    background-color: rgba(79, 79, 79, 0.5) !important;
+    color: #FFF;
+    box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-bral input.ac-input {
+    display: none;
+}
+
+.accordion-bral .article {
+    background: rgb(240, 240, 240);
+    overflow: hidden;
+    height: 0px;
+    max-height: auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-bral .article p {
+    color: #777;
+    line-height: 23px;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.accordion-bral input:checked~.article i {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.accordion-bral input:checked~.article.ac-content {
+    height: auto;
+}
+
+.accordion-bral i {
+    position: absolute;
+    transform: translate(-30px, 0);
+    margin-top: 16px;
+    right: 0;
+}
+
+.accordion-bral input:checked~.ac-label i:before {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+.accordion-bral input:checked~.ac-label i:after {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.accordion-bral i:before,
+.accordion-bral i:after {
+    content: "";
+    position: absolute;
+    background-color: #808080;
+    width: 3px;
+    height: 9px;
+}
+
+.accordion-bral i:before {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.accordion-bral i:after {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+ul.ac-list {
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+table.ac-table {
+    margin: 20px 0 20px 20px;
+}
+
+table.ac-table th {
+    text-align: left;
+}
+
+@media (max-width: 550px) {
+    .accordion-bral .ac-label {
+        font-family: Arial, sans-serif;
+        padding: 5px 20px;
+        position: relative;
+        display: block;
+        height: auto;
+        padding-right: 40px;
+        cursor: pointer;
+        color: #777;
+        line-height: 33px;
+        font-size: 19px;
+        background: #EFEFEF;
+        border: 1px solid #CCC;
+    }
+
+    .accordion-bral i {
+        position: absolute;
+        transform: translate(-30px, 0);
+        margin-top: 2%;
+        right: 0;
+    }
+}
+
+/* ---------- accordion style end --------------------------------------- */
+
+/* Footer */
+footer {
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    font: normal normal bold 23px "Neo Sans Pro Ultra";
+}
+
+
+/* Botao  Vantagem*/
+
+
+.vantagem-text a {
+    text-decoration: none;
+
+    padding: 30px 60px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 2;
+    font: normal normal bold 22px "Neo Sans Pro Ultra";
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    background-color: white;
+    color: red;
+    border: none;
+    box-shadow: 12px 12px 24px rgba(11, 11, 11, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    outline: none;
+    position: relative;
+}
+
+.vantagem-text a::before {
+    content: '';
+    border-radius: 50px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    box-shadow: 0 0 60px rgba(4, 4, 4, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.vantagem-text a:hover,
+.vantagem-text :focus {
+    color: red;
+    transform: translateY(-6px);
+}
+
+.vantagem-text a:hover::before,
+.main-section .main-section-texta:focus::before {
+    opacity: 1;
+}
+
+.vantagem-text a::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #0d0d0d;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.main-section .main-section-text a:hover::after,
+.main-section .main-section-text a:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+
+/* End Botao */
+
+
+/* Botao  balao*/
+
+
+.image-balao a {
+    text-decoration: none;
+
+    padding: 30px 80px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 2;
+    font: normal normal bold 22px "Neo Sans Pro Ultra";
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    background-color: white;
+    color: red;
+    border: none;
+    box-shadow: 12px 12px 24px rgba(11, 11, 11, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    outline: none;
+    position: relative;
+}
+
+.image-balao a::before {
+    content: '';
+    border-radius: 50px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    box-shadow: 0 0 60px rgba(4, 4, 4, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.image-balao a:hover,
+.image-balao :focus {
+    color: red;
+    transform: translateY(-6px);
+}
+
+
+.image-balao a::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #0d0d0d;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.main-section .main-section-text a:hover::after,
+.main-section .main-section-text a:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+/*  End Balao */

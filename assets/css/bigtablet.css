@@ -1,0 +1,20 @@
+.main-section .main-section-text a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    font: normal normal bold 16px "Neo Sans Pro Ultra" !important;
+
+}
+
+.vantagem-text a {
+    padding: 30px 5px;
+    width: 100%;
+    font: normal normal bold 16px "Neo Sans Pro Ultra" !important;
+
+}
+
+.image-balao a {
+    text-decoration: none;
+    padding: 30px 10px;
+    font: normal normal bold 16px "Neo Sans Pro Ultra" !important;
+}

@@ -1,0 +1,161 @@
+nav {
+    background-color: red;
+    padding-inline: 50px;
+    padding-block: 5px;
+    text-align: center;
+}
+
+nav img {
+    width: 100%;
+
+}
+
+nav .menu {
+    width: 160px;
+    align-items: center;
+    margin: auto;
+}
+
+.main-section {
+    padding-inline: 50px;
+    flex-direction: column;
+}
+
+.main-section .main-section-text {
+
+    font: normal normal bold 18px "Neo Sans Pro";
+}
+
+.main-section .main-section-text h1 {
+    font-size: 2.5rem;
+    padding-block: 26px;
+}
+
+.main-section .main-section-text h3 {
+    margin-block: 20px 20px;
+    font-size: 2rem;
+}
+
+.main-section .main-section-text {
+    width: 100%;
+}
+
+.botao-main-section {
+    text-align: center;
+    width: 100%;
+    margin-block: 20px;
+}
+
+.main-section .main-section-text a {
+    padding: 10px 60px;
+}
+
+.main-section-image {
+    margin-block: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.main-section-image img {
+    width: 100%;
+}
+
+/* Secção Aprender */
+
+.aprender {
+    flex-direction: column;
+    padding-block: 50px;
+    text-align: center;
+}
+
+.aprender .image-tela {
+    width: 80%;
+}
+
+.aprender .image-balao {
+    width: 80%;
+}
+
+.image-balao img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.image-balao a {
+    padding: 25px 70px;
+}
+
+/* Secção Metodologia */
+
+.metodologia h3 {
+    font: normal normal bold 30px "Neo Sans Pro Ultra";
+    padding-block: 40px;
+}
+
+.lista-metodologia .icon-metodologia {
+    width: 50%;
+    font: normal italic bold 20px "Neo Sans Pro Ultra";
+}
+
+.icon-metodologia img {
+    width: 40%;
+}
+
+/* Secção Vantagem */
+
+.vantagem {
+    flex-direction: column;
+}
+
+.image-vantagem {
+    align-items: flex-end;
+    width: 100%;
+    order: 2;
+}
+
+.image-vantagem img {
+    width: 100%;
+
+}
+
+.vantagem-text {
+    width: 100%;
+    order: 1;
+}
+
+.vantagem-text h2 {
+    color: white;
+    font: normal italic bold 26px "Neo Sans Pro Ultra";
+    text-align: center;
+    padding: 20px;
+}
+
+.vantagem-text a {
+    text-decoration: none;
+    margin-top: 50px;
+    background-color: white;
+    color: red;
+    padding: 20px 95px;
+    text-align: center;
+    border-radius: 50px;
+    font: normal normal bold 18px "Neo Sans Pro Ultra";
+}
+
+.vantagem-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-block: 20px;
+}
+
+.iconvantagens {
+    margin-inline: 23px;
+    width: 40%;
+}
+
+/* Accordion */
+.perguntas {
+    padding-block: 20px;
+}
